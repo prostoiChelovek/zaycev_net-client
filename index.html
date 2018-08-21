@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <title>Music!</title>
+</head>
+<body>
+   <div class="search">
+      <input id="query" type="text" placeholder="Query..">
+      <button id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+   </div>
+   <div id="tracks"></div>
+   <div class="control">
+      <button id="pbControl-btn" ><i class="fa fa-play" aria-hidden="true"></i></button>
+      <input id="time-control" type="range" min="0" max="100" step="1" value="0"> 
+      <div class="currentTime-container">
+         <p id="currentTime"></p>
+      </div>
+      <audio src="" id="audioPlayer"></audio>
+   </div>
+   <script type="text/javascript" src="common.js"></script>
+</body>
+</html>

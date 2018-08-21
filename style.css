@@ -1,0 +1,196 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+
+button {
+   border: none;
+   border-radius: 0;
+}
+
+input {
+   border: none;
+   border-radius: 0;
+   background-color: white;
+   color: #706D73;
+}
+
+.search {
+   width: 100%;
+   height: 40px;
+   background-color: #D8D4D7;
+}
+
+#query {
+   width: 90%;
+   height: 100%;
+   font-size: 15px;
+   outline: none;
+}
+
+#query:focus {
+   border-bottom: 2px solid #00A6D7;
+}
+
+#search-btn {
+   height: 100%;
+   width: 8.8%;
+   background: #00A6D7;
+   color: white;
+   outline: none;
+}
+
+.control {
+   position: fixed;
+   bottom: 0;
+   background-color: #D8D4D7;
+   width: 100%;
+   height: 40px;
+}
+
+#pbControl-btn {
+   background: white;
+   color: #00A6D7;
+   height: 100%;
+   width: 10%;
+   font-size: 20px;
+   outline: none;
+}
+
+#time-control {
+   margin-left: 10px;
+   width: 70%;
+}
+
+#volume-control {
+   width: 16%;
+}
+
+.currentTime-container {
+   position: relative;
+   float: right;
+}
+
+#currentTime {
+   color: #00A6D7;
+   line-height: 40px;
+   margin-right: 5px;
+}
+
+#tracks {
+  /* padding-top: 40px;*/
+   padding-bottom: 40px;
+   width: 100%;
+}
+
+.track {
+   width: 100%;
+   height: 40px;
+   color: #00A6D7;
+   font-size: 20px;
+   position: relative;
+}
+
+.track:hover{
+   background-color: #f2f2f2;
+   cursor: pointer;
+}
+
+#track-selected {
+   background-color: #f2f2f2;
+}
+
+.track > p {
+   line-height: 20px;
+   position: absolute;
+   top: 50%;
+   margin-top: -10px;
+}
+
+.track > .duration {
+   font-size: 15px;
+   right: 0%;
+}
+
+#audioPlayer {
+   display: none;
+}
+
+.settings {
+   height: 100%;
+   width: 100%;
+}
+
+.settings > .inputs > .input {
+   position: relative;
+   height: 30px;
+   width:  100%;
+}
+
+.settings > .inputs > .input > input {
+   float: right;
+   height: 30px;
+   width: 60%;
+   border: 1px solid gray;
+}
+
+.settings > .inputs > .input > p {
+   position: absolute;
+   line-height: 32px;
+   top: 50%;
+   margin-top: -16px;
+}
+
+.settings >.controls {
+   position: fixed;
+   bottom: 0;
+}
+
+.settings > .controls > button {
+   outline: none;
+   margin: 5px;
+   color: white;
+   width: 70px;
+   height: 40px;
+   border: none;
+   border-radius: 0;
+}
+
+.settings > .controls > #apply {
+   background-color: #A6E22C;
+}
+
+.settings > .controls > #discard {
+   background-color: #C62060;
+}
+
+input[type=range] {
+   -webkit-appearance: none;   
+}
+
+input[type=range]:focus {
+   outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+   height: 8px;
+	cursor: pointer;
+	background: #00A6D7;
+}
+
+input[type=range]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+   height: 15px;
+   width: 15px;
+   border: 3px solid white;
+	border-radius: 100%;
+	background: #00A6D7;
+   cursor: pointer;
+   margin-top: -3px;
+}
